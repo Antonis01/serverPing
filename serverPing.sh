@@ -1,11 +1,14 @@
 #!/bin/bash
 
-while ! nc -vz insert_server_ip_here insert_server_port_here &> /dev/null 
+server_ip="insert_ip_here"
+server_port=insert_port_here
+
+while ! nc -vz $server_ip $server_port &> /dev/null 
         do echo "~ Server is currently offline "
-	exit
+        exit
 done
-	echo "~ Server is currently online "
-	printf "\n"
-	ping -c1 insert_server_ip_here
+        echo "~ Server is currently online "
+        printf "\n"
+        ping -c1 $server_ip
 
 
