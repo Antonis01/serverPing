@@ -1,5 +1,5 @@
 # serverPing
-A bash script that pings your server one time otherwise it returns that the server is closed.
+A bash script that pings your server one time otherwise it returns that the server is closed.\n
 In order for the script to run properly you need to install netcat.
 
 
